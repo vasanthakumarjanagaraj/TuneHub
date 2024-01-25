@@ -35,7 +35,7 @@ public class PaymentController {
 		u.setPrime(true);
 		service.updateUser(u);
 		return "login";
-	}
+}
 
 	@GetMapping("/payment-failure")
 	public String paymentFailure() {
