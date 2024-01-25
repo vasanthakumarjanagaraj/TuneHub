@@ -11,12 +11,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.demo.entities.Songs;
 import com.example.demo.services.SongServices;
+import com.example.demo.services.UserServices;
+
 
 @Controller
 public class SongController {
 
 	@Autowired
 	SongServices service;
+
+
+         @Autowired
+	UserServices userService;
+
+
 	
 	@PostMapping("/addsong")
 	public String addSong(@ModelAttribute Songs song ) {
@@ -39,8 +47,9 @@ public class SongController {
 	}
 	
 	@GetMapping("/isPrimeUser")
-	public String isPrimeUser(Model model) {
-		boolean prime=false;
+	public String isPrimeUser(Model model,HttpSession session) {
+		String userEmail=(String)session.getAttribute("email");
+		boolean prime=userService.getUser(userEmail).isPrime();
 		if(prime==true) {
 			List<Songs> songList=service.viewAllSongs();
 			model.addAttribute("songs", songList);
