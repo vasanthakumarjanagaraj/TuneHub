@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>All PlayList</title>
+</head>
+<body>
+	<table border>
+		<thead>
+			<tr>
+				<th>PlayList Name</th>
+				<th>Songs</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="playlist:${allPlaylist}">
+				<td th:text="${playlist.name}"></td>
+				<td>
+					<ul>
+						<li th:each="song : ${playlist.songs}" th:text="${song.name}"></li>
+					</ul>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+</body>
+</html>
