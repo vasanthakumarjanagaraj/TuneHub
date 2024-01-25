@@ -61,24 +61,6 @@ public class UsersController {
 		
 	}
 	
-	/*
-	@GetMapping("/pay")
-	public String pay(@RequestParam String email) {
-		boolean isPrime=false;//api
-		if(isPrime==true) {
-			Users user=service.getUser(email);
-			//updating user object
-			user.setPrime(true);
-			//updating user table in db
-			service.updateUser(user);
-			return"login";
-		}
-		
-		else {
-		return"pay";
-		}
-	}
-	*/
 	
 	@GetMapping("/logout")
 	public String logout(HttpSession session) {
