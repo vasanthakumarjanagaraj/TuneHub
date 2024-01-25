@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.entities.Users;
@@ -13,6 +14,7 @@ import com.example.demo.services.UserServices;
 import com.razorpay.Order;
 import com.razorpay.RazorpayClient;
 import com.razorpay.RazorpayException;
+import com.razorpay.Utils;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -23,6 +25,20 @@ public class PaymentController {
 
 	@GetMapping("/pay")
 	public String pay() {
+		return "pay";
+	}
+	
+	@GetMapping("/payment-success")
+	public String paymentSuccess(HttpSession session) {
+		String mail =  (String) session.getAttribute("email");
+		Users u = service.getUser(mail);
+		u.setPrime(true);
+		service.updateUser(u);
+		return "login";
+	}
+
+	@GetMapping("/payment-failure")
+	public String paymentFailure() {
 		return "pay";
 	}
 
@@ -42,12 +58,7 @@ public class PaymentController {
 			orderRequest.put("receipt", "order_rcptid_11");
 
 			order = razorpay.orders.create(orderRequest);
-
-			String mail =  (String) session.getAttribute("email");
-
-			Users u = service.getUser(mail);
-			u.setPrime(true);
-			service.updateUser(u);
+			
 
 		} catch (RazorpayException e) {
 			e.printStackTrace();
@@ -55,5 +66,24 @@ public class PaymentController {
 		finally {
 			return order.toString();
 		}
-	}	
+	}
+	
+	@PostMapping("/verify")
+	@ResponseBody
+	public boolean verifyPayment(@RequestParam  String orderId, @RequestParam String paymentId, @RequestParam String signature) {
+	    try {
+	        // Initialize Razorpay client with your API key and secret
+	        RazorpayClient razorpayClient = new RazorpayClient("rzp_test_s3E89ofuGl2M0d", "jRWgHuMLh1nb1lzdOQzhyY5b");
+	        // Create a signature verification data string
+	        String verificationData = orderId + "|" + paymentId;
+
+	        // Use Razorpay's utility function to verify the signature
+	        boolean isValidSignature = Utils.verifySignature(verificationData, signature, "jRWgHuMLh1nb1lzdOQzhyY5b");
+
+	        return isValidSignature;
+	    } catch (RazorpayException e) {
+	        e.printStackTrace();
+	        return false;
+	    }
+	}
 }
