@@ -3,40 +3,57 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Register Here</title>
+<link rel="stylesheet" th:href="@{/css/register.css}">
 </head>
 <body>
+<nav class="navigation">
+<ul>
+<li><h2>TUNE-HUB</h2></li>
+<li><a href="/home">HOME</a></li>
+<li><a href="/aboutnew">ABOUT</a></li>
+<li><a href="/login">LOGIN</a></li>
+<li class="home"><a href="/register">REGISTER</a></li>
+<li><a href="/contact">CONTACT</a></li>
+</ul>
+</nav>
+
+<div class="d1">
+<div class="d2">
 
 <form action ="/register" method="post" >
-<label>UserName :</label>
-<input type="text" name="username">
-<br>
-<label>Email</label>
-<input type="email" name="email">
-<br>
-<label>Password</label>
-<input type="password" name="password">
-<br>
-<label>Gender</label>
-<input type="radio" name="gender" value="male">
-<label>M</label>
-<input type="radio" name="gender" value="female">
-<label>F</label>
-<input type="radio" name="gender" value="others">
-<label>O</label>
-<br>
-<label>Role</label>
-<input type="radio" name="role" value="Admin">
-<label>Admin</label>
-<input type="radio" name="role" value="User">
-<label>User</label>
-<br>
-<label>Address</label>
-<textarea name="address"></textarea>
-<br>
+<pre>
+        <label>REGISTER</label>
+          
+ <label>UserName:</label><input type="text" name="username" placeholder="Enter Username">
 
-<input type="submit" value=Register> 
- 
+ <label>Email   :</label><input type="email" name="email" placeholder="Enter Email Address">
 
+ <label>Password:</label><input type="password" name="password" placeholder="Enter Password">
+
+ <label>Gender  :</label><input type="radio" name="gender" value="male"><label>M</label><input type="radio" name="gender" value="female"><label>F</label><input type="radio" name="gender" value="others"><label>O</label>
+
+ <label>Role    :</label><input type="radio" name="role" value="Admin"><label>Admin</label><input type="radio" name="role" value="User"><label>User</label>
+
+ <label>Address :</label><textarea name="address" placeholder="Enter Address"></textarea>
+          <input type="submit" value=Register> 
+           
+ <label>Already USER? </label><a href="/login">LOGIN</a>
+ </pre>
 </form>
+
+</div>
+</div>
+
+<div class="footer">
+<ul>
+<li><a href="/home">HOME</a></li>
+<li><a href="/aboutnew">ABOUT</a></li>
+<li><a href="/login">LOGIN</a></li>
+<li class="home"><a href="/register">REGISTER</a></li>
+<li><a href="/contact">CONTACT</a></li>
+<li><a href="privacy">PRIVACY POLICY</a></li>
+</ul>
+</div>
+<h6>Copyright @2024 Created By VASANTHAKUMAR JANAGARAJ</h6>
 </body>
 </html>

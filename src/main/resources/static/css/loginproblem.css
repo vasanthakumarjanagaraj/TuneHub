@@ -1,0 +1,163 @@
+body{
+	margin: 0px;
+
+}
+
+.navbar ul{
+	list-style-type :none;
+	background-color: black;
+	overflow:hidden;
+	text-align:center;
+	margin: 0px;
+	padding: 0px;
+
+}
+.navbar li{
+	float: left;
+}
+.navbar a{
+	display: block;
+	padding :20px;
+	color:rgba(236, 236, 230, 0.908);
+	margin-top: 5px;
+	font-family: sans-serif;
+	font-stretch: wider;
+	text-decoration: inherit;
+	
+}
+h2{
+	width:200px;
+	color: white;
+	margin-left: 2px;
+	font-family: sans-serif;
+	font-stretch: wider;
+	border-style: inset;
+	border-color: white;
+}
+.navbar a:hover {
+	color:white;
+	text-decoration: underline;
+}
+.footer ul{
+	background-color: black;
+	margin: 0px;
+	
+	
+}
+.footer a{
+	color:rgba(236, 236, 230, 0.908);
+	font-family: sans-serif;
+	text-decoration:  inherit;
+}
+.footer li{
+	text-align: center;
+	padding: 20px;
+	
+}
+
+.footer a:hover{
+	color :white;
+	text-decoration: underline;
+}
+h6{
+	margin :0px;
+	text-align: center;
+	background-color: black;
+	color: rgba(247, 242, 242, 0.593);
+	font-family :sans-serif;
+	font-style: inherit;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div1{
+	height: 200px;
+	width:17%;
+	background-image: url(/images/invalid.jpg);
+	margin-left: 25%;
+}
+
+
+.div2{
+	height: 200px;
+	width:35%;
+	margin-right: 20%;
+	float: right;
+	font-weight: 900;
+	font-family: sans-serif;
+	font-stretch: wider;
+	margin-top: 6%;
+	
+}
+.div3{
+	margin-top:82px;
+	height: 5%;
+	width: 122px;
+	margin-left :42%;
+    font-size: x-large;
+    background-color: black;
+    border-color: rgba(101, 226, 240, 0.973);
+    border-style: inset;
+}
+.div3 a{
+	color:white;
+	text-decoration: none;
+    text-align: center;
+}
+.div3 a:hover {
+	background-color: red;
+}
+
+.div4{
+	height: 5%;
+	width: 212px;
+	margin-left :39%;
+    font-size: x-large;
+    background-color: black;
+    border-color: rgba(101, 226, 240, 0.973);
+    border-style: inset;
+    
+}
+.div4 a{
+	color:white;
+	text-decoration: none;
+    text-align: center;
+}
+.div4 a:hover {
+	color:white;
+	background-color: green;
+}

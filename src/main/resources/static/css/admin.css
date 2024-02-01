@@ -1,0 +1,41 @@
+body{
+	background-image: url(/images/img3.jpg);
+	
+}
+.div1{
+	background-color: black;
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+	margin-top: 100px;
+	border-radius: 20px;
+	border-style: inset;
+	border-color: red;
+}
+a{
+	color :white;
+	font-size: 20px;
+	font-style: none;
+	text-decoration: inherit;
+}
+a:hover {
+	background-color: rgba(47, 224, 237, 0.952);
+}
+.div1:hover {
+	background-color: black;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+	padding: 30px;
+	margin-top: 100px;
+	border-style: inset;
+	border-color: red;
+	border-radius: 20px;
+	font-size: 20px;
+}
+h1{
+	color: white;
+}

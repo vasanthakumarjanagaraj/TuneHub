@@ -7,17 +7,57 @@
 	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+<link rel="stylesheet" th:href="@{/css/pay.css}">
 </head>
 <body>
-<div>
 
-		<h1>Why premium ? </h1>
-		<p>text...................?</p>
-		
-    	<form id="payment-form">
-	        <button type="submit" class="buy-button" >BUY</button>
-	    </form>
-   
+<nav class="navigation">
+<ul>
+<li><h2>TUNE-HUB</h2></li>
+<li><a href="/home">HOME</a></li>
+<li><a href="/aboutnew">ABOUT</a></li>
+<li class="home"><a href="/login">LOGIN</a></li>
+<li><a href="/logout">LOGOUT</a></li>
+<li><a href="/register">REGISTER</a></li>
+<li ><a href="/contact">CONTACT</a></li>
+</ul>
+</nav>
+<div class="div1">
+
+</div>
+
+<div class="div2">
+<h1>Why PRIME ?</h1>
+<p><h3>Unlock the Ultimate Music Experience with TUNE-HUB Prime Membership!</h3>
+<br>
+At TUNE-HUB, we believe that music is not just a sound; it's an experience that has the power to uplift, inspire, and transport us to new realms of emotion and imagination. That's why we're thrilled to introduce TUNE-HUB Prime Membership, your passport to a world of premium music streaming and exclusive benefits.
+<br>
+<h3>With TUNE-HUB Prime Membership, you'll enjoy:</h3>
+
+<h4>Ad-Free Listening:</h4> Say goodbye to interruptions and distractions with ad-free music streaming. Immerse yourself in your favorite songs and playlists without any interruptions, allowing you to fully appreciate the beauty of every note and lyric.
+
+<h4>Unlimited Downloads:</h4> Take your music with you wherever you go with unlimited downloads. Whether you're traveling, commuting, or simply relaxing at home, download your favorite tracks and playlists to enjoy offline, anytime, anywhere.
+
+<h4>High-Quality Audio:</h4> Experience music as it was meant to be heard with high-quality audio streaming. From crystal-clear vocals to immersive instrumentals, every song comes to life in stunning detail, ensuring an unparalleled listening experience.
+
+<h4>Exclusive Content:</h4> Dive deeper into the world of music with access to exclusive content, including live performances, behind-the-scenes footage, artist interviews, and more. Get an insider's look at your favorite artists and discover new music that you won't find anywhere else.
+
+<h4>Personalized Recommendations:</h4> Discover your next favorite song with personalized recommendations tailored to your unique tastes and preferences. Our advanced recommendation algorithms analyze your listening habits to curate playlists and suggestions that resonate with you, making it easier than ever to find the perfect soundtrack for every moment.
+<br><br>
+Plus, as a TUNE-HUB Prime Member, you'll be supporting the artists and creators who bring music to life, helping to ensure a vibrant and thriving music ecosystem for years to come.
+<br><br>
+Upgrade to TUNE-HUB Prime Membership today and elevate your music listening experience to new heights. Join our community of music lovers, unlock exclusive benefits, and immerse yourself in the world of premium music streaming like never before.
+<br><br>
+Don't miss out on this incredible opportunity to take your music journey to the next level. Upgrade to TUNE-HUB Prime Membership now and let the music move you!"
+</p>
+<h1>Click On BUY Button</h1>
+</div>
+
+<div class="buy">
+<form id="payment-form">
+ <button type="submit" class="buy-button" >BUY</button>
+</form>
+<br>
 </div>
 
 <script>
@@ -84,5 +124,17 @@ function verifyPayment(orderId, paymentId, signature) {
          });
 }
 </script>
+
+<div class="footer">
+<ul>
+<li><a href="/home">HOME</a></li>
+<li><a href="/aboutnew">ABOUT</a></li>
+<li class="home"><a href="/login">LOGIN</a></li>
+<li><a href="/logout">LOGOUT</a></li>
+<li><a href="/register">REGISTER</a></li>
+<li><a href="/contact">CONTACT</a></li>
+<li><a href="/privacy">PRIVACY POLICY</a></li>
+</ul>
+</div>
 </body>
 </html>

@@ -3,15 +3,26 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Play Songs</title>
-<style type="text/css">
-iframe {
-	height: 100px;
-	width: 500px;
-}
-</style>
+<link rel="stylesheet" th:href="@{/css/viewsongs.css}">
 </head>
 <body>
 
+<nav class="navbar">
+		<ul>
+			<li><h2>TUNE-HUB</h2></li>
+			<li><a href="/home">HOME</a></li>
+			<li><a href="aboutnew">ABOUT</a></li>
+			<li class="home"><a href="/login">LOGIN</a></li>
+			<li><a href="/logout">LOGOUT</a></li>
+			<li class="home"><a href="/isPrimeUser">ALL SONGS</a></li>
+			<li><a href="/register">REGISTER</a></li>
+			<li><a href="/contact">CONTACT</a></li>
+		</ul>
+	</nav>
+
+
+<div class="bg">
+<div class="d1">
 	<table border>
 		<thead>
 			<tr>
@@ -38,6 +49,21 @@ iframe {
 
 		</tbody>
 	</table>
-<a href="/logout">Logout</a>
+	</div>
+</div>
+
+<div class="footer">
+<ul>
+<li><a href="/home">HOME</a></li>
+<li><a href="/aboutnew">ABOUT</a></li>
+<li class="home"><a href="/login">LOGIN</a></li>
+<li><a href="/logout">LOGOUT</a></li>
+<li><a href="/register">REGISTER</a></li>
+<li><a href="/contact">CONTACT</a></li>
+<li><a href="/privacy">PRIVACY POLICY</a></li>
+</ul>
+</div>
+<h6>Copyright @2024 Created By VASANTHAKUMAR JANAGARAJ</h6>
+
 </body>
 </html>

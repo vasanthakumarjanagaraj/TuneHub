@@ -1,0 +1,32 @@
+body{
+	background-image: url(/images/img6.jpg);
+	background-size: cover;
+	
+}
+
+.d1{
+	margin: auto;
+	text-align: center;
+	margin-top: 200px;
+	height :200px;
+	width:300px;
+	background-color: black;
+    color: white;
+    border-radius: 20px;
+	border-style: inset;
+	border-color: red;
+}
+.d1:hover {
+	margin: auto;
+	text-align: center;
+	margin-top: 200px;
+	height :300px;
+	width:400px;
+	background-color: black;
+    color: white;
+    font-size:25px;
+    border-style: inset;
+	border-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -3,16 +3,52 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login Page</title>
+<link rel="stylesheet" th:href="@{/css/login.css}">
 </head>
+
 <body>
+
+<nav class="navbar">
+		<ul>
+			<li><h2>TUNE-HUB</h2></li>
+			<li><a href="/home">HOME</a></li>
+			<li><a href="aboutnew">ABOUT</a></li>
+			<li class="home"><a href="/login">LOGIN</a></li>
+			<li><a href="/register">REGISTER</a></li>
+			<li><a href="/contact">CONTACT</a></li>
+		</ul>
+	</nav>
+
+<div class="d1">
+
+<div class="d2">
+<br>
+<h2 style="margin-left: 40px;">LOGIN</h2>
 <form action="/validate" method="post">
-<label>Email :</label>
-<input type="email" name="email">
-<br>
+<label>Email  ID</label>
+<input type="email" name="email" placeholder="Enter Email Address">
+<br><br>
 <label>Password</label>
-<input type="password" name="password">
-<br>
+<input type="password" name="password" placeholder="Enter Password">
+<br><br>
 <input type="submit" value="Login">
+<h4>Don't have an Account?</h4>
+<a href="/register" >REGISTER</a>
 </form>
+</div>
+</div> 
+<br><br>
+
+<div class="footer">
+		<ul>
+			<li ><a href="/home">HOME</a></li>
+			<li><a href="/aboutnew">ABOUT</a></li>
+			<li class="home"><a href="/login">LOGIN</a></li>
+			<li><a href="/register">REGISTER</a></li>
+			<li><a href="/contact">CONTACT</a></li>
+			<li><a href="privacy">PRIVACY POLICY</a></li>
+		</ul>
+	</div>
+<h6>Copyright @2024 Created By VASANTHAKUMAR JANAGARAJ</h6>
 </body>
 </html>

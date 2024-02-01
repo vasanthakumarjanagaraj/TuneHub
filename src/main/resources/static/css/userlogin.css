@@ -1,0 +1,143 @@
+body{
+	margin: 0px;
+}
+
+.navigation ul{
+	list-style-type :none;
+	background-color: black;
+	overflow:hidden;
+	text-align:center;
+	margin: 0px;
+	padding: 0px;
+
+}
+.navigation li{
+	float: left;
+}
+.navigation a{
+	display: block;
+	padding :20px;
+	color:rgba(236, 236, 230, 0.908);
+	margin-top: 5px;
+	font-family: sans-serif;
+	font-stretch: wider;
+	text-decoration: inherit;
+	
+}
+h2{
+	width:200px;
+	color: white;
+	margin-left: 2px;
+	font-family: sans-serif;
+	font-stretch: wider;
+	border-style: inset;
+	border-color: white;
+}
+.navigation a:hover {
+	color:white;
+	text-decoration: underline;
+}
+.home{
+	 text-decoration: underline;
+}
+.footer ul{
+	background-color: black;
+	margin: 0px;
+	
+	
+}
+.footer a{
+	color:rgba(236, 236, 230, 0.908);
+	font-family: sans-serif;
+	text-decoration:  inherit;
+}
+.footer li{
+	text-align: center;
+	padding: 20px;
+	
+}
+
+.footer a:hover{
+	color :white;
+	text-decoration: underline;
+}
+h6{
+	margin :0px;
+	text-align: center;
+	background-color: black;
+	color: rgba(247, 242, 242, 0.593);
+	font-family :sans-serif;
+	font-style: inherit;
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.div{
+	margin:0px;
+	height: 700px;
+	width:100%;
+	background-image: url(/images/img7.jpg);
+	background-size: cover;
+	text-align: center;
+}
+.div h1{
+	margin: 0px;
+	text-align: center;
+	font-family: sans-serif;
+	font-stretch: wider;
+	background-color: white;
+}
+.div p{
+	margin: 5px;
+	font-family: sans-serif;
+	font-stretch: wider;
+	
+	
+	
+}
+.div a{
+	font-family: sans-serif;
+	font-stretch: wider;
+	text-decoration: inherit;
+	color: white;
+	text-align: center;
+	background-color: black;
+    border-style :inset;
+    border-color :white;
+	width: 250px;
+	
+}
+
+.div a:hover{
+	
+	color: white;
+	text-align: center;
+	background-color: green;
+    border-style :inset;
+    border-color :white;
+	width: 250px;
+	padding: 5px;
+	
+}
+
+
+pre{
+	text-align: left;
+	margin-left: 10%;
+	font-size: xx-large;
+	color: white;
+	padding: 0px;
+	font-family: sans-serif;
+	font-stretch: wider;
+	text-shadow: black;
+	font-weight: 900;
+	
+}

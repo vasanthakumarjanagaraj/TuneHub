@@ -1,0 +1,12 @@
+body{
+	background-image: url(/images/img7.jpg);
+	background-size: cover;
+}
+.d1{
+margin: auto;
+margin-left: 900px;
+margin-top: 20px;
+color: white;
+font-size: 15px;
+text-decoration: blink;
+}

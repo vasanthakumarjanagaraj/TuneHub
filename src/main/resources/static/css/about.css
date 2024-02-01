@@ -1,0 +1,137 @@
+body {
+	margin: 0px;
+	background-color: white;
+}
+
+h2{
+	width:200px;
+	margin-left: 2px;
+	color: white;
+	font-family: sans-serif;
+	font-stretch: wider;
+	border-style: inset;
+	border-color: white;
+}
+.navbar{
+	/*
+	border-style: inset;
+	border-color: white;*/
+}
+.navbar ul{
+	list-style-type: none;
+	background-color: black;
+	padding :0px;
+	margin: 0px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.navbar a{
+	color :rgba(236, 236, 230, 0.908);
+	padding: 20px;
+	display: block;
+	font-family: sans-serif;
+	font-stretch: wider;
+	margin-top: 5px;
+}
+.navbar a:hover{
+	color :white;
+	text-decoration: underline;
+	
+}
+.navbar li{
+	float:left;
+}
+
+.footer ul{
+	list-style-type: none;
+	background-color: black;
+	padding :0px;
+	margin: 0px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.footer a{
+	color :rgba(236, 236, 230, 0.908);
+	padding: 20px;
+	display: block;
+	font-family: sans-serif;
+	font-stretch: wider;
+	margin-top: 5px;
+}
+.footer a:hover{
+	color :white;
+	text-decoration: underline;
+}
+.home{
+	text-decoration: underline;
+}
+
+a{
+	text-decoration: inherit;
+}
+
+
+.d1{
+	background-image: url(/images/about2.jpg);
+	height: 250px;
+	background-size: cover;
+}
+.divleft{
+	height :auto;
+	width:29%;
+	margin-left: 20%;
+	font-size: x-large;
+	text-align: justify;
+}
+.divright{
+	height :auto;
+	width:29%;
+	float: right;
+	margin-right :20%;
+	font-size: x-large;
+	text-align: justify;
+}
+.divcenter{
+	width: 29%;
+	margin :0px;
+	text-align:center;
+	margin-left: 550px;
+    font-size: x-large;
+	text-align: justify;
+}
+
+.footer ul{
+	list-style-type: none;
+	background-color: black;
+	padding :0px;
+	margin: 0px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.footer a{
+	color :rgba(236, 236, 230, 0.908);
+	padding: 20px;
+	display: block;
+	font-family: sans-serif;
+	font-stretch: wider;
+	margin-top: 5px;
+}
+.footer a:hover{
+	color :white;
+	text-decoration: underline;
+}
+.home{
+	text-decoration: underline;
+}
+h6{
+	margin :0px;
+	text-align: center;
+	background-color: black;
+	color: rgba(247, 242, 242, 0.593);
+	font-family :sans-serif;
+	font-style: inherit;
+	padding: 20px;
+}

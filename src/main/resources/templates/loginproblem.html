@@ -3,12 +3,49 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Account Not Exist !!!</title>
+<link rel="stylesheet" th:href="@{/css/loginproblem.css}">
 </head>
 <body>
-<h1>Invalid Email or Password !</h1>
+<nav class="navbar">
+<ul>
+<li><h2>TUNE-HUB</h2></li>
+<li><a href="/home">HOME</a></li>
+<li><a href="/aboutnew">ABOUT</a></li>
+<li><a href="/login">LOGIN</a></li>
+<li><a href="/register">REGISTER</a></li>
+<li ><a href="/contact">CONTACT</a></li>
+</ul>
+</nav>
+<marquee>
+<span style="color: red; font-family: sans-serif;">KINDLY PLEASE MAKE SURE YOUR EMAIL ID AND PASSWORD IS CORECT BEFORE CLICKING LOGIN BUTTON. IF YOU DON'T HAVE AN ACCOUNT KINDLY PLEASE CREATE AN NEW ACCOUNT.</span>
+</marquee>
+<div class="div2">
+<h1>EMAIL ID OR PASSWORD !</h1>
+</div>
+
+<div class="div1">
+</div>
+
+<div class="div3">
+<a href="/login">Login Again</a>
+</div>
+<br>
+<div class="div4">
+<a href="/register">Register new Account</a>
+</div>
 <br>
 
-<a href="/login">Login Again</a>
-<a href="/register">Register new Account</a>
+<div class="footer">
+<ul>
+<li><a href="/home">HOME</a></li>
+<li><a href="/aboutnew">ABOUT</a></li>
+<li class="home"><a href="/login">LOGIN</a></li>
+<li><a href="/logout">LOGOUT</a></li>
+<li><a href="/register">REGISTER</a></li>
+<li><a href="/contact">CONTACT</a></li>
+<li><a href="/privacy">PRIVACY POLICY</a></li>
+</ul>
+</div>
+<h6>Copyright @2024 Created By VASANTHAKUMAR JANAGARAJ</h6>
 </body>
 </html>

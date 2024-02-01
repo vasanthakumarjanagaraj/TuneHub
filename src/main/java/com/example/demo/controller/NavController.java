@@ -23,6 +23,24 @@ public class NavController {
 	public String addSong() {
 		return "addsong";
 	}
+	@GetMapping("/aboutnew")
+	public String aboutPage() {
+		return "about";
+	}
+	@GetMapping("/home")
+	public String homePage() {
+		return "index";
+	}
+	@GetMapping("/privacy")
+	public String privacypolicy() {
+		return "privacypolicy";
+	}
+	@GetMapping("/contact")
+	public String contact() {
+		return "contact";
+	}
+	
+	
 	
 	
 	
